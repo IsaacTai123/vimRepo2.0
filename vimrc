@@ -31,6 +31,7 @@ call plug#begin('~/.vim/plugged')
 
   "for Pythone
   Plug 'ycm-core/YouCompleteMe'
+  Plug 'Yggdroot/indentLine'
 call plug#end()
 
 "--------------
