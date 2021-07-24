@@ -10,4 +10,5 @@ endfunc
 
 
 
-vnoremap <F9> :!python3<CR>
+"在visual mode的時候按F9 在filetype=python的時後片段執行python code.
+autocmd FileType python vnoremap <buffer> <F9> :!python3<CR>

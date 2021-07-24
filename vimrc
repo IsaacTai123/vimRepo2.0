@@ -32,6 +32,10 @@ call plug#begin('~/.vim/plugged')
   "for Pythone
   Plug 'ycm-core/YouCompleteMe'
   Plug 'Yggdroot/indentLine'
+  Plug 'tell-k/vim-autopep8'
+  Plug 'nvie/vim-flake8'
+  Plug 'jiangmiao/auto-pairs'
+  Plug 'kien/rainbow_parentheses.vim'
 call plug#end()
 
 "--------------

@@ -14,6 +14,15 @@ let NERDTreeAutoDeleteBuffer = 1
 " Display empty subfolder correctly
 let NERDTreeCascadeSingleChildDir = 0
 
+let g:NERDTreeDirArrowExpandable = '►'
+let g:NERDTreeDirArrowCollapsible = '↪'
+
 " Remove NERDTree window if there's no any buffer exists.
 autocmd BufEnter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
+" Start NERDTree and put the cursor back in the other window.
+autocmd vimEnter * NERDTree | wincmd p
+
+
+" Open the existing NERDTree on each new tab.
+autocmd BufWinEnter * if getcmdwintype() == '' | silent NERDTreeMirror | endif
