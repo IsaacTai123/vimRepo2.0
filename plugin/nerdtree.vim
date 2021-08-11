@@ -3,7 +3,7 @@ nnoremap <silent> <F2> :NERDTreeToggle<Enter>
 
 " Looks better :)
 let NERDTreeMinimalUI = 1
-let g:NERDTreeWinSize = 25
+let g:NERDTreeWinSize = 30
 
 " Reset root directory when switch dir in NERDTree 
 let NERDTreeChDirMode = 2

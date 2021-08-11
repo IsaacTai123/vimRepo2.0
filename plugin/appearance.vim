@@ -40,9 +40,12 @@ syntax on
 try
   set background=dark
   colorscheme gruvbox
+  " colorscheme zenburn
   highlight EndOfBuffer cterm=NONE ctermfg=bg ctermbg=bg
 catch
 endtry
+
+
 
 "--------------
 " Sound
