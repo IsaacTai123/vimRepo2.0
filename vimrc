@@ -50,6 +50,7 @@ set noswapfile
 set hidden
 set nobomb            " no BOM(Byte Order Mark)
 set mouse=a
+set omnifunc=syntaxcomplete#Complete  " 這個可以讓你啟用vim 自帶的autocomplete. 要啟用這個功能我們要用 ctrl+x+o && ctrl+n
 
 "--------------
 " Filetype and Encoding
@@ -66,5 +67,4 @@ scriptencoding utf-8
 " key mapping
 "--------------
 let mapleader = ","
-
 

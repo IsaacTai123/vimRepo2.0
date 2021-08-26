@@ -1,3 +1,6 @@
+set suffixesadd=.java
+set makeprg=javac\ -g\ %
+
 " 實現按下F5執行Python3程式碼
 filetype plugin on
 nnoremap <F7> :call PRUN_J()<CR>
