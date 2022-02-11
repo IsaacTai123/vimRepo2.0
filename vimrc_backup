@@ -68,3 +68,4 @@ scriptencoding utf-8
 "--------------
 let mapleader = ","
 
+" hi Normal guibg=NONE ctermbg=NONE

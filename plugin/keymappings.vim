@@ -34,4 +34,4 @@ nnoremap <C-H> <C-W><C-H>
 
 "copy and paste
 vnoremap <C-c> "*y :let @+=@*<CR>
-map <C-v> "+P
+map <leader><C-v> "+P

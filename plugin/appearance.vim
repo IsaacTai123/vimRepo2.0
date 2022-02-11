@@ -36,15 +36,22 @@ set expandtab
 "--------------
 set t_Co=256  " Number of colors
 syntax on
+syntax enable
 
+" let g:solarized_termcolors=256
 try
   set background=dark
   colorscheme gruvbox
+  " colorscheme one
+  " colorscheme wombat256
+  " " colorscheme janah
+  " colorscheme railscasts
+  " colorscheme molokai
+  " colorscheme solarized
   " colorscheme zenburn
-  highlight EndOfBuffer cterm=NONE ctermfg=bg ctermbg=bg
+  " highlight EndOfBuffer cterm=NONE ctermfg=bg guibg=NONE ctermbg=NONE
 catch
 endtry
-
 
 
 "--------------
@@ -56,3 +63,7 @@ set noerrorbells
 set t_vb=
 set tm=500
 
+
+
+" change background to transparent
+hi Normal guibg=NONE ctermbg=NONE
