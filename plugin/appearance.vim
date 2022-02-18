@@ -12,6 +12,7 @@ set ruler
 set showtabline=2
 set shortmess=I       " remove splash wording
 set equalalways       " split windows are always equal size
+set statusline+=%F    " show path in vim
 
 "--------------
 " split window

@@ -21,8 +21,8 @@ let g:NERDTreeDirArrowCollapsible = '↪'
 autocmd BufEnter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 " Start NERDTree and put the cursor back in the other window.
-autocmd vimEnter * NERDTree | wincmd p
+" autocmd vimEnter * NERDTree | wincmd p
 
 
 " Open the existing NERDTree on each new tab.
-autocmd BufWinEnter * if getcmdwintype() == '' | silent NERDTreeMirror | endif
+" autocmd BufWinEnter * if getcmdwintype() == '' | silent NERDTreeMirror | endif

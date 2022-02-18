@@ -35,3 +35,9 @@ nnoremap <C-H> <C-W><C-H>
 "copy and paste
 vnoremap <C-c> "*y :let @+=@*<CR>
 map <leader><C-v> "+P
+
+"map FZF
+noremap <leader>f :Files<CR>
+noremap <leader>b :m :Buffers<CR>
+" noremap <C-n> :Files<CR>
+" noremap <silent> <M-b> :m :Buffers<CR>
