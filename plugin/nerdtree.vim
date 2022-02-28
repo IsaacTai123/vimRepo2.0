@@ -16,6 +16,7 @@ let NERDTreeCascadeSingleChildDir = 0
 
 let g:NERDTreeDirArrowExpandable = '►'
 let g:NERDTreeDirArrowCollapsible = '↪'
+let g:NERDTreeWinPos = "right"
 
 " Remove NERDTree window if there's no any buffer exists.
 autocmd BufEnter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif

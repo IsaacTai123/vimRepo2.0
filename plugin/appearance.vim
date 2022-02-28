@@ -9,10 +9,11 @@ set wrap
 set linebreak
 set cursorline
 set ruler
-set showtabline=2
+set showtabline=4
 set shortmess=I       " remove splash wording
 set equalalways       " split windows are always equal size
 set statusline+=%F    " show path in vim
+
 
 "--------------
 " split window
@@ -27,10 +28,14 @@ set scrolloff=3
 
 "--------------
 " Tab and space
+" (set tab key to 4 space)
 "--------------
-set softtabstop=2
-set shiftwidth=2
-set expandtab
+" set softtabstop=2
+" set shiftwidth=2
+" set expandtab
+set tabstop=4
+set softtabstop=0 noexpandtab
+set shiftwidth=4
 
 "--------------
 " ColorScheme
