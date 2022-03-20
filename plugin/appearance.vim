@@ -30,12 +30,12 @@ set scrolloff=3
 " Tab and space
 " (set tab key to 4 space)
 "--------------
-" set softtabstop=2
-" set shiftwidth=2
-" set expandtab
-set tabstop=4
-set softtabstop=0 noexpandtab
-set shiftwidth=4
+set softtabstop=2
+set shiftwidth=2
+set expandtab
+" set tabstop=4
+" set softtabstop=0 noexpandtab
+" set shiftwidth=4
 
 "--------------
 " ColorScheme
