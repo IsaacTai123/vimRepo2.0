@@ -11,8 +11,7 @@ inoremap <DOWN> <NOP>
 inoremap <LEFT> <NOP>
 inoremap <RIGHT> <NOP>
 
-" previous and next buffer
-noremap [b :bp<Enter>
+" previous and next buffer noremap [b :bp<Enter>
 noremap ]b :bn<Enter>
 
 
@@ -25,12 +24,19 @@ nnoremap <Leader>k O<Esc>
 nnoremap <leader>w :wa<CR>
 "map 讀取文件
 nnoremap <leader>s :so %<CR>
+nnoremap H ^
+nnoremap L $
+nnoremap <leader>d :e .<CR>
+
 
 "split navigations
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
+map vv <C-W>v
+map ss <C-W>s
+map Q <C-W>q
 
 "copy and paste
 vnoremap <C-c> "*y :let @+=@*<CR>
@@ -38,6 +44,6 @@ map <leader><C-v> "+P
 
 "map FZF
 noremap <leader>f :Files<CR>
-noremap <leader>b :m :Buffers<CR>
+noremap <leader>b :Buffers<CR>
 " noremap <C-n> :Files<CR>
 " noremap <silent> <M-b> :m :Buffers<CR>

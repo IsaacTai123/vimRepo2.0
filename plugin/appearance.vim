@@ -2,12 +2,13 @@
 " appearance
 "--------------
 set number             " show line number
+set relativenumber
 set noshowmode         " disable mode(because of Vim-Airline)
 set showcmd            " display command
 set nolist             " do not display invisible characters
 set wrap              
 set linebreak
-set cursorline
+" set cursorline
 set ruler
 set showtabline=4
 set shortmess=I       " remove splash wording
@@ -36,11 +37,13 @@ set expandtab
 " set tabstop=4
 " set softtabstop=0 noexpandtab
 " set shiftwidth=4
+filetype plugin indent on
 
 "--------------
 " ColorScheme
 "--------------
 set t_Co=256  " Number of colors
+set termguicolors
 syntax on
 syntax enable
 
@@ -72,4 +75,4 @@ set tm=500
 
 
 " change background to transparent
-hi Normal guibg=NONE ctermbg=NONE
+" hi Normal guibg=NONE ctermbg=NONE
