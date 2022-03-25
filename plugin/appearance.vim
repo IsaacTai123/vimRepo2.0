@@ -14,6 +14,7 @@ set showtabline=4
 set shortmess=I       " remove splash wording
 set equalalways       " split windows are always equal size
 set statusline+=%F    " show path in vim
+set hidden
 
 
 "--------------
@@ -71,6 +72,10 @@ set visualbell
 set noerrorbells
 set t_vb=
 set tm=500
+
+"--------------
+let g:netrw_liststyle = 3
+let g:netrw_banner = 0
 
 
 

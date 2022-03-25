@@ -11,8 +11,6 @@ inoremap <DOWN> <NOP>
 inoremap <LEFT> <NOP>
 inoremap <RIGHT> <NOP>
 
-" previous and next buffer noremap [b :bp<Enter>
-noremap ]b :bn<Enter>
 
 
 " remap some key for easy access
@@ -27,6 +25,7 @@ nnoremap <leader>s :so %<CR>
 nnoremap H ^
 nnoremap L $
 nnoremap <leader>d :e .<CR>
+nnoremap <leader>e :Explore<CR>
 
 
 "split navigations
@@ -47,3 +46,20 @@ noremap <leader>f :Files<CR>
 noremap <leader>b :Buffers<CR>
 " noremap <C-n> :Files<CR>
 " noremap <silent> <M-b> :m :Buffers<CR>
+"
+
+"===== map buffer shortcut ======
+" To open a new empty buffer
+" This replaces :tabnew which I used to bind to this mapping
+" nmap <leader>T :enew<CR>
+
+" previous and next buffer noremap [b :bp<Enter>
+noremap ]b :bn<CR>
+noremap [b :bprevious<CR>
+
+" Close the current buffer and move to the previous one
+" This replicates the idea of closing a tab
+" nmap <leader>bq :bp <BAR> bd #<CR>
+
+" Show all open buffers and their status
+" nmap <leader>bl :ls<CR>
