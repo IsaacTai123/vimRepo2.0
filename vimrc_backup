@@ -10,6 +10,9 @@ call plug#begin('~/.vim/plugged')
   Plug 'tpope/vim-surround'
   Plug 'tpope/vim-repeat'
   Plug 'terryma/vim-multiple-cursors'
+  Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+  Plug 'junegunn/fzf.vim'
+  Plug 'airblade/vim-rooter' "add the project concept to fzf. let you to search within whole project.
 
   " for general purpose development
   Plug 'tomtom/tcomment_vim'
@@ -39,7 +42,13 @@ call plug#begin('~/.vim/plugged')
 
   " color theme
   Plug 'rakr/vim-one'
+
+  " javascript syntax
+  Plug 'pangloss/vim-javascript'
+
 call plug#end()
+
+
 
 "--------------
 " Settings
@@ -68,4 +77,5 @@ scriptencoding utf-8
 "--------------
 let mapleader = ","
 
+" change background to transparent
 " hi Normal guibg=NONE ctermbg=NONE
